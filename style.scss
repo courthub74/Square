@@ -28,13 +28,19 @@ body {
     padding-bottom: 100%;
   }
   
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
 .lil_squares {
   display: flex;
   gap: 5em;
   height: 50%;
   .lil_square {
-    border: 2px solid blue;
-    background-color: blue;
+    border: 2px solid rgb(89, 89, 216);
+    background-color: rgb(21, 21, 215);
     width: 25%;
     // for the content positioning
     display: flex;
@@ -44,7 +50,10 @@ body {
     cursor: pointer;
     .square_content {
       width: 40%;
+      width: 100%;
       height: 100%;
+      margin: 6em 0 0 9em;
+      position: absolute;
       // BUTTON
       .square_head {
         background: none;
@@ -52,11 +61,21 @@ body {
         border: none;
         font-size: 1rem;
         font-weight: bold;
+        // background-color: red;
+        margin: 0 0 0 -.3rem;
+        // width: 100%;
       }
       p {
         color: white;
         font-size: small;
+        // background-color: rebeccapurple;
+        width: 50%;
       }
     }
+  }
+  .lil_square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
   }
 }
