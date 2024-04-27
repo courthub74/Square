@@ -1,0 +1,47 @@
+body {
+  height: 100vh;
+}
+
+.square {
+  position: relative;
+  width: 20%;
+  border: 2px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: xx-large;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.lil_squares {
+  display: flex;
+  gap: 2em;
+  height: 50%;
+}
+.lil_squares .lil_square {
+  border: 2px solid blue;
+  background-color: blue;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.lil_squares .lil_square .square_content {
+  width: 30%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
